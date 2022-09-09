@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+body{
+  background-color: #0d1a2d;
+}
+.wrapper{
+  background-color: #15273f;
+  height: 600px;
+  width: 360px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.img-cont{
+  width: 320px;
+  height: 320px;
+  background: url("./images/image-equilibrium.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.onhover{
+  background-color: #04fefa8b;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: none;
+}
+.onhover img{
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-cont:hover .onhover{
+  display: block;
+}
